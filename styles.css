@@ -91,15 +91,26 @@ body {
   /* GUIDE 3: reveal nav when toggled (use ~ combinator) */
   .menu-toggle:checked ~ nav {
     display: flex;
+    
+    /* GUIDE 4: style nav as vertical panel */
     flex-direction: column;
-    align-items: stretch;
-
+    align-items: center;
+    background: #fff;
+    
+    /* 4-2) Where the nav should be positioned? */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
   }
-  /* GUIDE 4: style nav as vertical panel */
+  
+  .nav a{
+    display: block;
+  }
   
   /* 4-1) How the link inside of nav should be displayed? */  
 
-  /* 4-2) Where the nav should be positioned? */
+  
    
 }
 /* (Optional) X animation */

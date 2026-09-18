@@ -79,12 +79,24 @@ body {
 @media (max-width: 720px) {
 
   /* GUIDE 1: hide the horizontal nav by default on small screens */
+  .nav{
+    display: none;
+  }
 
   /* GUIDE 2: show the hamburger on small screens */
-
+  .hamburger{
+    display: block;
+  }
+  
   /* GUIDE 3: reveal nav when toggled (use ~ combinator) */
+  .menu-toggle:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 
+  }
   /* GUIDE 4: style nav as vertical panel */
+  
   /* 4-1) How the link inside of nav should be displayed? */  
 
   /* 4-2) Where the nav should be positioned? */

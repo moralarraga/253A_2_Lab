@@ -104,13 +104,10 @@ body {
     left: 0;
   }
   
+  /* 4-1) How the link inside of nav should be displayed? */  
   .nav a{
     display: block;
   }
-  
-  /* 4-1) How the link inside of nav should be displayed? */  
-
-  
    
 }
 /* (Optional) X animation */
